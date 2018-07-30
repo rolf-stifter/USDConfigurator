@@ -121,6 +121,7 @@
     <Compile Include="Forms\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Entities.cs" />
     <Compile Include="Helpers\PluginControlBaseExtended.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +160,15 @@
     <EmbeddedResource Include="USDConfiguratorPluginControl.resx">
       <DependentUpon>USDConfiguratorPluginControl.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\Enums\" />
+    <Folder Include="Helpers\Interfaces\" />
+    <Folder Include="Logic\" />
+    <Folder Include="Models\CRM\" />
+    <Folder Include="Models\Custom\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
