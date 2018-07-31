@@ -28,6 +28,14 @@ namespace USDConfigurator.Helpers
         #endregion
         #region Status Bar Messager
         public event EventHandler<StatusBarMessageEventArgs> SendMessageToStatusBar;
+        public void SendInfoToStatusBar(int progressPercentage, string message)
+        {
+            SendMessageToStatusBar?.Invoke(this, new StatusBarMessageEventArgs(progressPercentage, message));
+        }
+        public void SendInfoToStatusBar(int progressPercentage)
+        {
+            SendMessageToStatusBar?.Invoke(this, new StatusBarMessageEventArgs(progressPercentage));
+        }
         #endregion
         #endregion
     }

@@ -30,31 +30,44 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(USDConfiguratorPluginControl));
             this.toolStrip_main = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton_About = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_retrieveData = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_about = new System.Windows.Forms.ToolStripButton();
             this.tabControl_main = new System.Windows.Forms.TabControl();
             this.toolStrip_main.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip_main
             // 
+            this.toolStrip_main.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_About});
+            this.toolStripButton_retrieveData,
+            this.toolStripButton_about});
             this.toolStrip_main.Location = new System.Drawing.Point(0, 0);
             this.toolStrip_main.Name = "toolStrip_main";
             this.toolStrip_main.Size = new System.Drawing.Size(150, 25);
             this.toolStrip_main.TabIndex = 0;
             this.toolStrip_main.Text = "Main Tool Strip";
             // 
-            // toolStripButton_About
+            // toolStripButton_retrieveData
             // 
-            this.toolStripButton_About.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton_About.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton_About.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_About.Image")));
-            this.toolStripButton_About.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_About.Name = "toolStripButton_About";
-            this.toolStripButton_About.Size = new System.Drawing.Size(44, 22);
-            this.toolStripButton_About.Text = "About";
-            this.toolStripButton_About.Click += new System.EventHandler(this.toolStripButton_About_Click);
+            this.toolStripButton_retrieveData.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_retrieveData.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_retrieveData.Image")));
+            this.toolStripButton_retrieveData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_retrieveData.Name = "toolStripButton_retrieveData";
+            this.toolStripButton_retrieveData.Size = new System.Drawing.Size(80, 22);
+            this.toolStripButton_retrieveData.Text = "Retrieve Data";
+            this.toolStripButton_retrieveData.Click += new System.EventHandler(this.toolStripButton_retrieveData_Click);
+            // 
+            // toolStripButton_about
+            // 
+            this.toolStripButton_about.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton_about.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_about.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_about.Image")));
+            this.toolStripButton_about.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_about.Name = "toolStripButton_about";
+            this.toolStripButton_about.Size = new System.Drawing.Size(44, 22);
+            this.toolStripButton_about.Text = "About";
+            this.toolStripButton_about.Click += new System.EventHandler(this.toolStripButton_About_Click);
             // 
             // tabControl_main
             // 
@@ -82,7 +95,8 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip_main;
-        private System.Windows.Forms.ToolStripButton toolStripButton_About;
+        private System.Windows.Forms.ToolStripButton toolStripButton_about;
         private System.Windows.Forms.TabControl tabControl_main;
+        private System.Windows.Forms.ToolStripButton toolStripButton_retrieveData;
     }
 }

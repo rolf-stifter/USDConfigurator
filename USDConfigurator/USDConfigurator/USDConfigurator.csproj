@@ -123,6 +123,7 @@
     </Compile>
     <Compile Include="Helpers\Entities.cs" />
     <Compile Include="Helpers\Enums\Statecode.cs" />
+    <Compile Include="Helpers\Interfaces\DataReceiver.cs" />
     <Compile Include="Helpers\PluginControlBaseExtended.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -165,7 +166,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helpers\Interfaces\" />
     <Folder Include="Logic\" />
     <Folder Include="Models\CRM\" />
     <Folder Include="Repositories\" />

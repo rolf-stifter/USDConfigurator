@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using USDConfigurator.Helpers.Enums;
 
 namespace USDConfigurator.Models.Custom
 {
@@ -10,6 +7,5 @@ namespace USDConfigurator.Models.Custom
     {
         public Guid Id { get; set; }
         public Statecode Status { get; set; }
-
     }
 }

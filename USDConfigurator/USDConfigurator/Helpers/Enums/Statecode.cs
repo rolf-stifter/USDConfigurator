@@ -1,6 +1,6 @@
 ﻿namespace USDConfigurator.Helpers.Enums
 {
-    enum Statecode
+    public enum Statecode
     {
         Active = 0, Inactive = 1
     }
